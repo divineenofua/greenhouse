@@ -1,18 +1,31 @@
+"use client";
+import SideBar from "@/components/customer/SideBar";
+import { useCustomerSidebarStore } from "@/zustand/stores";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import { IoMenuOutline, IoCloseOutline } from "react-icons/io5";
 
 export default function Layout({ children }) {
+  const { isOpen, openNavbar, closeNavbar, toggleNavbar } =
+    useCustomerSidebarStore();
+
+  const handleOpen = () => {
+    toggleNavbar();
+  };
+
   return (
-    <div>
-      <div className="flex gap-10">
-        <Link href="/customer/account">Account</Link>
-        <Link href="/customer/orderHistory">orderHistory</Link>
-        <Link href="/customer/inbox">inbox</Link>
-        <Link href="/customer/review">review</Link>
-        <Link href="/customer/settings">settings</Link>
-        <Link href="/signin">Logout</Link>
+    <div className="pt-36 max-md:pt-40 max-lg:pt-[220px] ">
+      <div className="max-w-[1535px] mx-auto mb-2 bg-grey-500 px-4 md:hidden fixed  left-0 right-0">
+        {!isOpen ? (
+          <IoMenuOutline className="" size={28} onClick={handleOpen} />
+        ) : (
+          <IoCloseOutline className="" size={28} onClick={handleOpen} />
+        )}
       </div>
-      {children}
+      <div className="flex max-w-[1535px] mx-auto gap-10 px-4">
+        <SideBar />
+        <div className="w-full max-sm:pt-10">{children}</div>
+      </div>
     </div>
   );
 }
