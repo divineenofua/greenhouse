@@ -18,7 +18,11 @@ function Button() {
 
 export default function Header() {
   return (
+<<<<<<< HEAD
     <header className="">
+=======
+    <header className=" -z-50  ">
+>>>>>>> 0c455ec (added faqs, contact, about page)
       <div className=" bg-forest-green-500 py-3 px-4 max-md:hidden">
         <div className="container mx-auto text-white font-light flex justify-between text-xs">
           <div>

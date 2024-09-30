@@ -25,13 +25,21 @@ export default function RootLayout({ children }) {
         </nav> */}
 
         {showHeaderFooter && (
+<<<<<<< HEAD
           <header className="fixed left-0 right-0">
+=======
+          <header className="fixed z-50 left-0 right-0">
+>>>>>>> 0c455ec (added faqs, contact, about page)
             <Header />
           </header>
         )}
         <main>{children}</main>
         {showHeaderFooter && (
+<<<<<<< HEAD
           <div className="mt-20">
+=======
+          <div className="">
+>>>>>>> 0c455ec (added faqs, contact, about page)
             <Footer />
           </div>
         )}

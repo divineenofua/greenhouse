@@ -6,6 +6,12 @@
 
 html {
   overflow-x: hidden;
+<<<<<<< HEAD
+=======
+  }
+ul {
+  list-style-type: square;
+>>>>>>> 0c455ec (added faqs, contact, about page)
 }
 
 body {
@@ -47,3 +53,12 @@ tr {
 .hero-title {
   font-family: "DM Sans", sans-serif;
 }
+<<<<<<< HEAD
+=======
+span.swiper-pagination-bullet.swiper-pagination-bullet-active  {
+  opacity: 2;
+  background: rgb(5, 75, 5);
+}
+
+ 
+>>>>>>> 0c455ec (added faqs, contact, about page)

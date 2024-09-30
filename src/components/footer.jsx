@@ -149,7 +149,7 @@ export default function footer() {
             <div>
               <h1 className="font-medium text-[16px]">Support</h1>
               <div>
-                <Link href="/contact" className="cursor-pointer text-[12px]">
+                <Link href="/faq" className="cursor-pointer text-[12px]">
                   FAQS
                 </Link>
               </div>

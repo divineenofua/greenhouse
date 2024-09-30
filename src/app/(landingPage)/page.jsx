@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <section className="">
-        <div className="pt-32 min-h-[100vh] background_img flex justify-center items-center">
+        <div className="pt-56 min-h-[100vh] background_img flex justify-center items-center">
           <div className="flex gap-3 lg:gap-8 items-center justify-center text-center flex-col">
             <h1 className="font-bold text-[48px] lg:text-[107px] text-white hero-title">
               Eco-Products,
